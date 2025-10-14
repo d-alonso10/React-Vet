@@ -12,13 +12,16 @@ const GlobalStyle = createGlobalStyle`
     --shadow: 0 10px 30px rgba(171, 203, 213, 0.4);
   }
 `;
+
 const DashboardContainer = styled.div`
   display: flex;
   height: 100vh;
   width: 100vw;
-  background: transparent;
+  /* ✨ MEJORA VISUAL: Añadimos un gradiente sutil */
+  background: linear-gradient(180deg, rgba(224, 234, 252, 0.7) 0%, rgba(240, 244, 248, 0.7) 100%);
   overflow: hidden;
 `;
+
 const Sidebar = styled.nav`
   width: 260px;
   background-color: var(--base-color);
@@ -26,8 +29,12 @@ const Sidebar = styled.nav`
   display: flex;
   flex-direction: column;
   box-shadow: 5px 0px 25px rgba(0,0,0,0.05);
-  z-index: 10;
+  z-index: 10; /* Aseguramos que la barra lateral esté por encima */
 `;
+
+// ... (El resto del código de Dashboard.js no necesita cambios, puedes dejarlo como está)
+// ... (Logo, NavMenu, NavItem, MainContent, Header, Card, Views, etc.)
+
 const Logo = styled.div`
   display: flex;
   align-items: center;
