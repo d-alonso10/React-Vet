@@ -333,7 +333,9 @@ const StyledTable = styled.table`
   }
   tbody tr {
     transition: background-color 0.2s ease;
-    &:hover { background-color: #f9f9f9; }
+    &:hover {
+      background-color: #f9f9f9;
+    }
   }
 `;
 const ActionButton = styled.button`
@@ -344,7 +346,9 @@ const ActionButton = styled.button`
   margin: 0 0.5rem;
   font-size: 1rem;
   transition: color 0.2s ease;
-  &:hover { color: var(--base-color-dark); }
+  &:hover {
+    color: var(--base-color-dark);
+  }
 `;
 
 // --- VISTAS DE CONTENIDO ---
@@ -412,6 +416,7 @@ const SearchClientView = () => {
         </Card>
     );
 };
+
 
 const Dashboard = () => {
   const [activeView, setActiveView] = useState('Citas');
